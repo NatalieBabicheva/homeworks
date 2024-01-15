@@ -1,1 +1,5 @@
-
+select * from logs 
+where logs.[event] = 'tample_selected'
+having count(value)>1
+order by value desc 
+limit 5
